@@ -1,19 +1,26 @@
-// set choices of moods for later selection
+// DOM object will contain functions for manipulating the DOM
+// renderJournalEntries function iterates through array of entries and calls component creation function to build element, then appends each to the DOM
 
-const moodChoices = document.getElementById("moodChoices");
-
-//one function to create new section element, append it, then create children of section out of json object
-
-const renderJournalEntries = (array) => {
-  array.forEach((object) => {
-    domComponent(object)
-  })
+const DOM = {
+  renderJournalEntries (array) {
+    array.forEach((object) => {
+      const journal = document.getElementsByClassName("journal")[0]
+      const section = document.createElement("section")
+      journal.appendChild(section)
+      const html = component.sectionChildren(object)
+      section.innerHTML += html
+    })
+  }
 }
 
 
 
 
+
 //ALL OF THE FOLLOWING CODE IS MOOT UNTIL THE NEXT JOURNAL CHAPTER-- CURRENTLY USING DUMMY JSON ENTRY
+// set choices of moods for later selection
+
+const moodChoices = document.getElementById("moodChoices");
 
 // listen for form submission
 document.addEventListener("submit", (e) => {
