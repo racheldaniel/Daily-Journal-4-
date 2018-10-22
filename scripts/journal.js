@@ -4,5 +4,5 @@
 
 */
 
-API.getJournalEntries().then(renderJournalEntries)
+API.getJournalEntries().then(DOM.renderJournalEntries)
 
