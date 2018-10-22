@@ -1,0 +1,61 @@
+body, html{
+  font-family: 'Forum', cursive;
+  background-image: url(../images/journal.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  height: 100%;
+
+}
+
+h1{
+  font-family: 'Fredericka the Great', cursive;
+
+}
+
+#submit {
+  background-color: #900C3F;
+  color: beige;
+  font-size: 15px;
+  margin-top: 2em;
+  padding: 5px;
+}
+
+#submit:hover {
+    opacity: .55;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+
+}
+
+input, select {
+  max-width: 150px;
+}
+
+textarea {
+  max-width: 300px;
+}
+
+form {
+  max-width: 500px
+}
+
+ul{
+  list-style: none;
+}
+
+section {
+  background-color: beige;
+  border: 2px dotted #900C3F;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.mood, .concepts {
+  font-weight: bold;
+  font-size: .75em;
+}
