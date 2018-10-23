@@ -2,17 +2,24 @@
   "entries": [
     {
       "id": 1,
-      "date": "10-18-2018",
+      "date": "2018-10-17",
       "concepts": "APIs and JSON",
       "entry": "Head spinning from empty promises and thenables",
       "mood": "frustrated"
     },
     {
       "id": 2,
-      "date": "10-19-2018",
+      "date": "2018-10-19",
       "concepts": "Promise methods",
       "entry": "Learned about Promise.all()-- made some sense. Solo work the rest of the day",
       "mood": "productive"
+    },
+    {
+      "date": "2018-10-10",
+      "concepts": "\"maybe\"?",
+      "entry": "test",
+      "mood": "productive",
+      "id": 3
     }
   ]
 }
