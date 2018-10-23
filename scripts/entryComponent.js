@@ -4,10 +4,10 @@
 const component = {
   sectionChildren(object) {
     let html = `
-      <h3 class="date">${object.date}</h3>
-      <p class="concepts">${object.concepts}</p>
+      <h3 class="date">Date: ${object.date}</h3>
+      <p class="concepts">Concepts Covered: ${object.concepts}</p>
       <p class="entry">${object.entry}</p>
-      <p class="mood">${object.mood}</p>
+      <p class="mood">I'm Feeling: ${object.mood}</p>
       `
     return html
   }
