@@ -25,6 +25,7 @@ document.addEventListener("submit", (e) => {
   const entryChars = `${concepts.value} ${journalEntry.value} ${dailyMood.value}`
   const entryNoPunct = entryChars.replace(/[.,\/!\^&\*;:{}()?]/g,"").toLowerCase()
   const entryWords = entryNoPunct.split(" ")
+  const badWords = ["fuck", "shit", "damn", "ass", "bitch", "hell", "dammit", "goddammit", "fucking", "fucked", "asshole"]
   let correctChars = true
   let noSwearing = true
 
@@ -37,7 +38,7 @@ document.addEventListener("submit", (e) => {
 
   //loop through all entered words (minus punctuation) and check for swear words
   for (i = 0; i < entryWords.length; i++) {
-    if (entryWords[i] === "fuck" || entryWords[i] === "shit" || entryWords[i] === "damn" ||entryWords[i] === "ass" || entryWords[i] === "bitch" || entryWords[i] === "hell" || entryWords[i] === "dammit" || entryWords[i] === "godammit" ) {
+    if (badWords.includes(entryWords[i])) {
       noSwearing = false
     } 
   }
