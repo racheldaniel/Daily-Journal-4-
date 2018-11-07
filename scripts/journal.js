@@ -15,7 +15,7 @@ document.addEventListener("submit", (e) => {
   formFunctions.storeSubmission()
 })
 
-//add an event listener for radio buttons. need to match the event target with the mood selection in entries
+//add an event listener for radio buttons to filter entries
 
 const filterMood = document.querySelector(".filter")
 
