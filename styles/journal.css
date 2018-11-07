@@ -2,7 +2,7 @@ body, html{
   font-family: 'Forum', cursive;
   background-image: url(../images/journal.jpeg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:round;
   background-size: cover;
   font-size: 20px;
   height: 100%;
@@ -26,10 +26,9 @@ h1{
     opacity: .55;
 }
 
-fieldset{
+.form{
   display: flex;
   flex-direction: column;
-
 }
 
 input, select {
@@ -59,3 +58,19 @@ section {
   font-weight: bold;
   font-size: .75em;
 }
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+div {
+  display: flex;
+  max-width: 25%;
+}
+
+.hidden {
+  display: none
+}
+
