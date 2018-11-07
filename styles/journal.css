@@ -2,15 +2,16 @@ body, html{
   font-family: 'Forum', cursive;
   background-image: url(../images/journal.jpeg);
   background-position: center;
-  background-repeat:round;
+  background-repeat:repeat;
   background-size: cover;
   font-size: 20px;
-  height: 100%;
+  height: 100%
 
 }
 
 h1{
   font-family: 'Fredericka the Great', cursive;
+  /* text-align: center */
 
 }
 
@@ -19,7 +20,8 @@ h1{
   color: beige;
   font-size: 15px;
   margin-top: 2em;
-  padding: 5px;
+  /* margin-left: 150px; */
+  padding: 5px
 }
 
 #submit:hover {
@@ -56,18 +58,22 @@ section {
 
 .mood, .concepts {
   font-weight: bold;
-  font-size: .75em;
+
 }
 
 .filter {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  font-size: 1em;
 }
 
-div {
-  display: flex;
-  max-width: 25%;
+fieldset {
+  max-width: 50%
+}
+
+.filter > div {
+  padding: 5px;
 }
 
 .hidden {
