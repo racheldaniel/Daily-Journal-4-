@@ -8,7 +8,7 @@ API.getJournalEntries().then(DOM.renderJournalEntries)
 
 
 // function to create entry upon submission
-document.addEventListener("submit", (e) => {
+$(document).submit(function(e) {
   // prevent page from reloading
   e.preventDefault();
   // assign input to variables
@@ -17,20 +17,17 @@ document.addEventListener("submit", (e) => {
 
 //add an event listener for radio buttons to filter entries
 
-const filterMood = document.querySelector(".filter")
 
-filterMood.addEventListener("click", (e) => {
+$(".filter").click( function(e) {
   let mood = e.target.value
-  console.log(mood)
-  let entries = document.querySelectorAll("section")
   if (mood) {
-    entries.forEach((entry) => {
+    $("section").each(function(i, entry) {
       let moodText = $(entry).find(".mood").text()
       if (moodText.includes(mood) || mood === "all" ) {
         $(entry).removeClass("hidden")
       } else {
         $(entry).addClass("hidden")
-      } 
+      }
     })
   }
 

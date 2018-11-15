@@ -3,11 +3,11 @@
 
 const DOM = {
   renderJournalEntries (array) {
-    const journal = document.getElementsByClassName("journal")[0]
-    journal.innerHTML = "" 
+    // const journal = $(".journal")
+    $(".journal").html("")
     array.forEach((object) => {
       const section = document.createElement("section")
-      journal.appendChild(section)
+      $(".journal").append(section)
       const html = component.sectionChildren(object)
       section.innerHTML += html
     })
