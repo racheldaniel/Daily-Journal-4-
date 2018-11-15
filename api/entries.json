@@ -20,6 +20,13 @@
       "entry": "Worked on Book 4 Ch. 13 and journal 6",
       "mood": "stressed",
       "id": 3
+    },
+    {
+      "date": "2018-11-16",
+      "concepts": "stuff",
+      "entry": "test",
+      "mood": "elated",
+      "id": 4
     }
   ]
 }
